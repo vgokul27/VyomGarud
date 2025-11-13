@@ -57,6 +57,7 @@ const About = () => {
       className="py-24 bg-slate-900 relative overflow-hidden"
       style={{ fontFamily: '"DM Sans", "Helvetica Neue", Arial, sans-serif' }}
     >
+      <div className="absolute inset-0 bg-gradient-to-b from-black to-gray-900"></div>
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-10"></div>
 
       <div
@@ -69,7 +70,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl lg:text-4xl md:text-5xl font-bold text-white mb-4">
             About <span className="text-[#ff7b00]">VyomGarud</span>
           </h2>
           <div className="w-24 h-1 bg-[#ff7b00] mx-auto mb-4"></div>

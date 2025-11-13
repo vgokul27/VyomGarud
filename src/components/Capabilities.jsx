@@ -50,7 +50,7 @@ const Capabilities = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             Our <span className="text-[#ff7b00]">Capabilities</span>
           </h2>
           <div className="w-24 h-1 bg-[#ff7b00] mx-auto mb-6"></div>

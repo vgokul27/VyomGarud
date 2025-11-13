@@ -31,7 +31,7 @@ const Contact = () => {
       className="py-24 bg-black relative overflow-hidden"
       style={{ fontFamily: '"DM Sans", "Helvetica Neue", Arial, sans-serif' }}
     >
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-black"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black"></div>
 
       <div
         ref={ref}
@@ -43,11 +43,11 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             Get In <span className="text-[#ff7b00]">Touch</span>
           </h2>
           <div className="w-24 h-1 bg-[#ff7b00] mx-auto mb-6"></div>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-md lg:text-lg max-w-2xl mx-auto">
             Ready to discuss your defense and security requirements? Contact us
             today.
           </p>
@@ -136,7 +136,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-52 bg-[#ff7b00] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#e66f00] transition-all transform hover:scale-105 shadow-lg shadow-[#ff7b00]/50"
+                className="w-52 bg-[#ff7b00] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#e66f00] transition-all transform hover:scale-105 shadow-lg shadow-[#ff7b00]/50 lg:ml-50"
               >
                 Send Message
               </button>

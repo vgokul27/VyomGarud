@@ -29,6 +29,7 @@ const Highlights = () => {
       id="highlights"
       className="py-24 bg-gray-900 relative overflow-hidden"
     >
+      <div className="absolute inset-0 bg-gradient-to-b from-black to-gray-900"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#ff7b00]/10 via-gray-900 to-gray-900"></div>
 
       <div
@@ -41,7 +42,7 @@ const Highlights = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             Performance <span className="text-[#ff7b00]">Highlights</span>
           </h2>
           <div className="w-24 h-1 bg-[#ff7b00] mx-auto"></div>
@@ -63,7 +64,7 @@ const Highlights = () => {
                   initial={{ scale: 1 }}
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 300 }}
-                  className="text-6xl font-bold text-[#ff7b00] mb-4"
+                  className="text-3xl lg:text-6xl font-bold text-[#ff7b00] mb-4"
                 >
                   {highlight.stat}
                 </motion.div>

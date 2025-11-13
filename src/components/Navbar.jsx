@@ -56,7 +56,7 @@ const Navbar = () => {
               href="#hero"
               className="text-2xl font-bold text-white hover:text-[#ff7b00] transition"
             >
-              Vyom<span className="text-[#ff7b00] font-bold">Garud</span>
+              Vyom<span className="text-[#ff7b00] font-bold hover:text-white">Garud</span>
             </a>
           </div>
 

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-[85vh] flex items-center justify-center bg-black overflow-hidden pt-48 pb-10"
+      className="relative h-screen flex items-center justify-start bg-black overflow-hidden py-20"
       style={{ fontFamily: '"DM Sans", "Helvetica Neue", Arial, sans-serif' }}
     >
       {/* Animated Grid Background */}
@@ -63,32 +63,6 @@ const Hero = () => {
           ></motion.div>
         </div>
 
-        {/* Corner Crosshairs */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: [0.3, 0.6, 0.3] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-          className="absolute top-10 left-10 w-16 h-16 border-l-2 border-t-2 border-[#ff7b00]/40"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: [0.3, 0.6, 0.3] }}
-          transition={{ repeat: Infinity, duration: 2, delay: 0.5 }}
-          className="absolute top-10 right-10 w-16 h-16 border-r-2 border-t-2 border-[#ff7b00]/40"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: [0.3, 0.6, 0.3] }}
-          transition={{ repeat: Infinity, duration: 2, delay: 1 }}
-          className="absolute bottom-10 left-10 w-16 h-16 border-l-2 border-b-2 border-[#ff7b00]/40"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: [0.3, 0.6, 0.3] }}
-          transition={{ repeat: Infinity, duration: 2, delay: 1.5 }}
-          className="absolute bottom-10 right-10 w-16 h-16 border-r-2 border-b-2 border-[#ff7b00]/40"
-        ></motion.div>
-
         {/* Floating Data Points */}
         <motion.div
           animate={{
@@ -129,7 +103,7 @@ const Hero = () => {
         ></motion.div>
 
         {/* HUD Elements */}
-        <div className="absolute top-20 left-20 text-[#ff7b00]/40 font-mono text-xs hidden lg:block">
+        <div className="absolute top-30 right-15 text-[#ff7b00]/40 font-mono text-xs hidden lg:block">
           <motion.div
             animate={{ opacity: [0.4, 1, 0.4] }}
             transition={{ repeat: Infinity, duration: 2 }}
@@ -149,26 +123,24 @@ const Hero = () => {
             <p>ALT: 5000 FT</p>
           </motion.div>
         </div>
-
-        {/* Orange accent glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#ff7b00] rounded-full blur-[150px] opacity-10"></div>
       </div>
 
       {/* Main Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center z-10">
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 z-10 w-full">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
+          className="max-w-3xl"
         >
-          {/* Drone Icon Above Title */}
+          {/* Drone Icon */}
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex justify-center mb-6"
+            className="mb-6"
           >
-            <div className="relative">
+            <div className="relative inline-block">
               <motion.div
                 animate={{ rotate: [0, 5, -5, 0] }}
                 transition={{
@@ -176,38 +148,31 @@ const Hero = () => {
                   duration: 4,
                   ease: "easeInOut",
                 }}
-              >
-                <div className="w-20 h-20 bg-gradient-to-br from-[#ff7b00] to-[#ff9933] rounded-full flex items-center justify-center shadow-2xl shadow-[#ff7b00]/50">
-                  <Radar className="w-10 h-10 text-white" strokeWidth={2} />
-                </div>
-              </motion.div>
-              {/* Pulse effect */}
-              <motion.div
-                animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }}
-                transition={{ repeat: Infinity, duration: 2 }}
-                className="absolute inset-0 w-20 h-20 bg-[#ff7b00] rounded-full"
               ></motion.div>
             </div>
           </motion.div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
-            Vyom<span className="text-[#ff7b00]">Garud</span>
-          </h1>
-          <motion.p
+          {/* Tagline */}
+          <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-lg md:text-xl text-gray-300 mb-3 font-light"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-white mb-6 leading-tight"
           >
-            Military-Grade UAV Systems
-          </motion.p>
+            Next Generation{" "}
+            <span className="text-[#ff7b00]">Military Grade</span> UAV Systems
+          </motion.h1>
+
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-sm md:text-base text-gray-400 mb-8 max-w-3xl mx-auto px-4"
+            className="text-base md:text-lg text-white mb-8 leading-relaxed max-w-4xl font-medium font-stretch-ultra-expanded tracking-wider"
           >
-            Precision Engineering | Advanced Autonomy | Unmatched Reliability
+            Delivering cutting-edge drone technology that combines precision
+            engineering with advanced autonomous capabilities. Built for defense
+            and security organizations that demand unmatched reliability and
+            performance.
           </motion.p>
 
           {/* Feature Icons */}
@@ -215,21 +180,21 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="flex flex-wrap justify-center gap-4 mb-8"
+            className="flex flex-wrap gap-3 mb-8"
           >
-            <div className="flex items-center gap-2 bg-gray-800/50 px-3 py-2 rounded-full border border-gray-700 hover:border-[#ff7b00] hover:bg-gray-800/70 transition-all duration-300 transform hover:scale-110 cursor-pointer">
+            <div className="flex items-center gap-2 bg-gray-800/50 px-3 py-2 rounded-lg border border-gray-700 hover:border-[#ff7b00] hover:bg-gray-800/70 transition-all duration-300 transform hover:scale-110 cursor-pointer">
               <Shield className="w-4 h-4 text-[#ff7b00]" />
               <span className="text-gray-300 text-xs font-medium">
                 Military-Grade
               </span>
             </div>
-            <div className="flex items-center gap-2 bg-gray-800/50 px-3 py-2 rounded-full border border-gray-700 hover:border-[#ff7b00] hover:bg-gray-800/70 transition-all duration-300 transform hover:scale-110 cursor-pointer">
+            <div className="flex items-center gap-2 bg-gray-800/50 px-3 py-2 rounded-lg border border-gray-700 hover:border-[#ff7b00] hover:bg-gray-800/70 transition-all duration-300 transform hover:scale-110 cursor-pointer">
               <Target className="w-4 h-4 text-[#ff7b00]" />
               <span className="text-gray-300 text-xs font-medium">
                 Precision Strike
               </span>
             </div>
-            <div className="flex items-center gap-2 bg-gray-800/50 px-3 py-2 rounded-full border border-gray-700 hover:border-[#ff7b00] hover:bg-gray-800/70 transition-all duration-300 transform hover:scale-110 cursor-pointer">
+            <div className="flex items-center gap-2 bg-gray-800/50 px-3 py-2 rounded-lg border border-gray-700 hover:border-[#ff7b00] hover:bg-gray-800/70 transition-all duration-300 transform hover:scale-110 cursor-pointer">
               <Cpu className="w-4 h-4 text-[#ff7b00]" />
               <span className="text-gray-300 text-xs font-medium">
                 AI-Powered
@@ -242,41 +207,41 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-4"
           >
             <a
               href="#capabilities"
-              className="bg-[#ff7b00] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#e66f00] transition-all transform hover:scale-105 shadow-lg shadow-[#ff7b00]/50 flex items-center gap-2 text-sm"
+              className="bg-orange-500 text-white px-6 py-3 rounded-4xl font-semibold hover:bg-white hover:text-black transition-all transform hover:scale-105 flex items-center justify-center gap-2 text-sm"
             >
               <Radar className="w-4 h-4" />
               Explore Capabilities
             </a>
             <a
               href="#contact"
-              className="border-2 border-gray-600 text-white px-6 py-3 rounded-lg font-semibold hover:border-[#ff7b00] hover:text-[#ff7b00] transition-all flex items-center gap-2 text-sm"
+              className="border-2 border-gray-600 text-white px-6 py-3 rounded-4xl font-semibold hover:border-[#ff7b00] transition-all flex items-center justify-center gap-2 text-sm"
             >
               <Shield className="w-4 h-4" />
               Get in Touch
             </a>
           </motion.div>
         </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.8 }}
-          className="absolute bottom-4 left-1/2 -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5 }}
-            className="w-5 h-8 border-2 border-gray-600 rounded-full flex justify-center"
-          >
-            <div className="w-1 h-2 bg-[#ff7b00] rounded-full mt-2"></div>
-          </motion.div>
-        </motion.div>
       </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 0.8 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      >
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5 }}
+          className="w-5 h-8 border-2 border-gray-600 rounded-full flex justify-center"
+        >
+          <div className="w-1 h-2 bg-[#ff7b00] rounded-full mt-2"></div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
