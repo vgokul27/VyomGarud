@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Menu } from "lucide-react";
+import { X, Menu, Radar } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,8 +54,11 @@ const Navbar = () => {
           <div className="flex items-center">
             <a
               href="#hero"
-              className="text-2xl font-bold text-white hover:text-[#ff7b00] transition"
+              className="flex items-center gap-2 text-2xl font-bold text-white hover:text-[#ff7b00] transition group"
             >
+              <div className="bg-gradient-to-br from-[#ff7b00] to-[#ff9933] p-2 rounded-lg group-hover:shadow-lg group-hover:shadow-[#ff7b00]/50 transition-shadow">
+                <Radar className="w-5 h-5 text-white" strokeWidth={2.5} />
+              </div>
               Vyom<span className="text-[#ff7b00] font-bold hover:text-white">Garud</span>
             </a>
           </div>
@@ -108,12 +111,15 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="fixed top-0 left-0 w-64 h-full bg-gray-800 text-white shadow-lg flex flex-col p-6 z-50"
+              className="fixed top-0 left-0 w-64 h-full bg-gray-900 text-white shadow-lg flex flex-col p-6 z-50"
             >
               {/* Close Button */}
               <div className="flex justify-between items-center mb-8">
-                <div className="text-2xl font-bold text-white">
-                  Vyom<span className="text-[#ff7b00]">Garud</span>
+                <div className="flex items-center gap-2 text-2xl font-bold text-white">
+                  <div className="bg-gradient-to-br from-[#ff7b00] to-[#ff9933] p-2 rounded-lg">
+                    <Radar className="w-5 h-5 text-white" strokeWidth={2.5} />
+                  </div>
+                  <div className="text-xl">Vyom</div><span className="text-[#ff7b00] text-xl">Garud</span>
                 </div>
                 <button
                   className="text-2xl text-gray-300 hover:text-[#ff7b00]"
@@ -129,7 +135,7 @@ const Navbar = () => {
                   <motion.li
                     key={link.href}
                     whileHover={{ scale: 1.1 }}
-                    className="cursor-pointer"
+                    className="cursor-pointer text-bold text-white tracking-wide"
                     onClick={() => setIsOpen(false)}
                   >
                     <a
@@ -148,7 +154,7 @@ const Navbar = () => {
 
               {/* Sidebar Footer */}
               <div className="mt-auto pt-6 border-t border-gray-700">
-                <p className="text-gray-400 text-sm text-center">
+                <p className="text-gray-400 text-sm text-center tracking-wide">
                   Military-Grade UAV Systems
                 </p>
               </div>
