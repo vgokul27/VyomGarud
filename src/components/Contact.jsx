@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram } from "lucide-react";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -75,7 +75,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#ff7b00] transition-colors"
+                  className="w-full bg-gray-900 border-2 border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#ff7b00] transition-colors"
                   
                 />
               </div>
@@ -94,7 +94,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#ff7b00] transition-colors"
+                  className="w-full bg-gray-900 border-2 border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#ff7b00] transition-colors"
                 />
               </div>
 
@@ -111,7 +111,7 @@ const Contact = () => {
                   name="organization"
                   value={formData.organization}
                   onChange={handleChange}
-                  className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#ff7b00] transition-colors"
+                  className="w-full bg-gray-900 border-2 border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#ff7b00] transition-colors"
                 />
               </div>
 
@@ -129,14 +129,14 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows="5"
-                  className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#ff7b00] transition-colors resize-none"
+                  className="w-full bg-gray-900 border-2 border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#ff7b00] transition-colors resize-none"
                   placeholder="Tell us about your requirements..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-52 bg-[#ff7b00] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#e66f00] transition-all transform hover:scale-105 shadow-lg shadow-[#ff7b00]/50 lg:ml-50"
+                className="w-52 bg-[#c66509] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#e66f00] transition-all transform hover:scale-105 shadow-lg lg:ml-50 cursor-pointer"
               >
                 Send Message
               </button>
@@ -150,9 +150,9 @@ const Contact = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="space-y-8"
           >
-            <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-8">
+            <div className="bg-gray-900/50 backdrop-blur-sm border-2 border-gray-900 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-white mb-6">
-                Contact Information
+                Contact Information :
               </h3>
 
               <div className="space-y-6">
@@ -173,7 +173,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Phone</h4>
-                    <p className="text-gray-400">+91 XXX XXX XXXX</p>
+                    <p className="text-gray-400">+91 98765 43210</p>
                   </div>
                 </div>
 
@@ -191,24 +191,24 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-8">
+            <div className="bg-gray-900/50 backdrop-blur-sm border-2 border-gray-900 rounded-2xl p-8">
               <h3 className="text-xl font-bold text-white mb-4">Follow Us On : </h3>
               <div className="flex space-x-4">
                 <a
                   href="#"
-                  className="bg-gray-800 p-3 rounded-lg text-gray-400 hover:text-[#ff7b00] hover:bg-gray-700 transition-all duration-300"
+                  className="bg-gray-900 p-3 rounded-lg text-gray-400 hover:text-[#ff7b00] transition-all duration-300"
                 >
                   <Linkedin className="w-6 h-6" />
                 </a>
                 <a
                   href="#"
-                  className="bg-gray-800 p-3 rounded-lg text-gray-400 hover:text-[#ff7b00] hover:bg-gray-700 transition-all duration-300"
+                  className="bg-gray-900 p-3 rounded-lg text-gray-400 hover:text-[#ff7b00] transition-all duration-300"
                 >
-                  <Twitter className="w-6 h-6" />
+                  <Instagram className="w-6 h-6" />
                 </a>
                 <a
                   href="#"
-                  className="bg-gray-800 p-3 rounded-lg text-gray-400 hover:text-[#ff7b00] hover:bg-gray-700 transition-all duration-300"
+                  className="bg-gray-900 p-3 rounded-lg text-gray-400 hover:text-[#ff7b00] transition-all duration-300"
                 >
                   <Facebook className="w-6 h-6" />
                 </a>

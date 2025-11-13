@@ -69,7 +69,7 @@ const Capabilities = () => {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               className="group"
             >
-              <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-8 hover:border-[#ff7b00] transition-all duration-300 h-full hover:shadow-xl hover:shadow-[#ff7b00]/20 transform hover:-translate-y-2">
+              <div className="bg-gray-900/50 backdrop-blur-sm border-2 border-gray-800 rounded-xl p-8 hover:border-[#ff7b00] transition-all duration-300 h-full hover:shadow-xl hover:shadow-[#ff7b00]/20 transform hover:-translate-y-2">
                 <div className="text-5xl mb-4">{capability.icon}</div>
                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#ff7b00] transition-colors">
                   {capability.title}

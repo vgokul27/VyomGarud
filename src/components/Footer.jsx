@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
             <span className="text-2xl font-bold text-white">
               Vyom<span className="text-[#ff7b00]">Garud</span>
             </span>
-            <p className="text-gray-400 text-sm mt-4 leading-relaxed">
+            <p className="text-gray-400 text-sm mt-4 leading-relaxed tracking-wide">
               Military-Grade UAV Systems delivering precision, reliability, and
               excellence.
             </p>
@@ -22,19 +22,19 @@ const Footer = () => {
             <div className="flex space-x-3 mt-6">
               <a
                 href="#"
-                className="bg-gray-800 p-2 rounded-lg text-gray-400 hover:text-[#ff7b00] hover:bg-gray-700 transition-all duration-300"
+                className="bg-gray-900 p-2 rounded-lg text-gray-400 hover:text-[#ff7b00] transition-all duration-300"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="bg-gray-800 p-2 rounded-lg text-gray-400 hover:text-[#ff7b00] hover:bg-gray-700 transition-all duration-300"
+                className="bg-gray-900 p-2 rounded-lg text-gray-400 hover:text-[#ff7b00] transition-all duration-300"
               >
-                <Twitter className="w-5 h-5" />
+                <Instagram className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="bg-gray-800 p-2 rounded-lg text-gray-400 hover:text-[#ff7b00] hover:bg-gray-700 transition-all duration-300"
+                className="bg-gray-900 p-2 rounded-lg text-gray-400 hover:text-[#ff7b00] transition-all duration-300"
               >
                 <Facebook className="w-5 h-5" />
               </a>
@@ -43,12 +43,12 @@ const Footer = () => {
 
           {/* Product Column */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Product</h3>
-            <ul className="space-y-3">
+            <h3 className="text-orange-500 font-semibold text-lg mb-4">Product</h3>
+            <ul className="space-y-3 tracking-wide">
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Tactical UAVs
                 </a>
@@ -56,7 +56,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Surveillance Drones
                 </a>
@@ -64,7 +64,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Combat Systems
                 </a>
@@ -72,7 +72,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   AI Autopilot
                 </a>
@@ -80,7 +80,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Ground Control
                 </a>
@@ -90,14 +90,14 @@ const Footer = () => {
 
           {/* Industries Column */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">
+            <h3 className="text-orange-500 font-semibold text-lg mb-4">
               Industries
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 tracking-wide">
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Defense & Military
                 </a>
@@ -105,7 +105,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Border Security
                 </a>
@@ -113,7 +113,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Law Enforcement
                 </a>
@@ -121,7 +121,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Critical Infrastructure
                 </a>
@@ -129,7 +129,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Intelligence Operations
                 </a>
@@ -139,12 +139,12 @@ const Footer = () => {
 
           {/* Resources Column */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Resources</h3>
-            <ul className="space-y-3">
+            <h3 className="text-orange-500 font-semibold text-lg mb-4">Resources</h3>
+            <ul className="space-y-3 tracking-wide">
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Documentation
                 </a>
@@ -152,7 +152,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Technical Specs
                 </a>
@@ -160,7 +160,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Case Studies
                 </a>
@@ -168,7 +168,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   White Papers
                 </a>
@@ -176,7 +176,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Training Materials
                 </a>
@@ -186,12 +186,12 @@ const Footer = () => {
 
           {/* Company Column */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Company</h3>
-            <ul className="space-y-3">
+            <h3 className="text-orange-500 font-semibold text-lg mb-4">Company</h3>
+            <ul className="space-y-3 tracking-wide">
               <li>
                 <a
                   href="#about"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   About Us
                 </a>
@@ -199,7 +199,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Our Team
                 </a>
@@ -207,7 +207,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Careers
                 </a>
@@ -215,7 +215,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Press & Media
                 </a>
@@ -223,7 +223,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#contact"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Contact Us
                 </a>
@@ -233,14 +233,14 @@ const Footer = () => {
 
           {/* Quick Links Column */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">
+            <h3 className="text-orange-500 font-semibold text-lg mb-4">
               Quick Links
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 tracking-wide">
               <li>
                 <a
                   href="#hero"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Home
                 </a>
@@ -248,7 +248,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#capabilities"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Capabilities
                 </a>
@@ -256,7 +256,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#highlights"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Highlights
                 </a>
@@ -264,7 +264,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Privacy Policy
                 </a>
@@ -272,7 +272,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#ff7b00] transition-colors text-sm"
+                  className="text-white hover:text-[#ff7b00] transition-colors text-sm"
                 >
                   Terms of Service
                 </a>

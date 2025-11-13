@@ -59,7 +59,7 @@ const Highlights = () => {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               className="text-center group"
             >
-              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-[#ff7b00] transition-all duration-300 hover:shadow-xl hover:shadow-[#ff7b00]/20">
+              <div className="bg-gray-900/50 backdrop-blur-sm border-2 border-gray-800 rounded-2xl p-8 hover:border-[#ff7b00] transition-all duration-300 hover:shadow-xl hover:shadow-[#ff7b00]/20">
                 <motion.div
                   initial={{ scale: 1 }}
                   whileHover={{ scale: 1.1 }}
@@ -84,7 +84,7 @@ const Highlights = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-16 max-w-4xl mx-auto"
         >
-          <div className="bg-black/50 backdrop-blur-sm border border-gray-800 rounded-xl p-8">
+          <div className="bg-black/50 backdrop-blur-sm border-2 border-orange-500 rounded-xl p-8 shadow-2xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div>
                 <div className="text-[#ff7b00] text-2xl mb-2">⚡</div>

@@ -95,7 +95,7 @@ const About = () => {
               }}
               className="group"
             >
-              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 h-full hover:border-[#ff7b00] transition-all duration-300 hover:shadow-xl hover:shadow-[#ff7b00]/10">
+              <div className="bg-gray-900/50 backdrop-blur-sm border-2 border-gray-700 rounded-2xl p-6 h-full hover:border-[#ff7b00] transition-all duration-300 hover:shadow-xl hover:shadow-[#ff7b00]/10">
                 {/* Icon */}
                 <motion.div
                   whileHover={{ scale: 1.1, rotate: 5 }}
@@ -134,7 +134,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-12 max-w-4xl mx-auto"
         >
-          <div className="bg-black/30 backdrop-blur-sm border border-gray-800 rounded-xl p-6 md:p-8 text-center shadow-2xl">
+          <div className="bg-black/30 backdrop-blur-sm border-2 border-orange-600 rounded-2xl p-6 md:p-8 text-center shadow-2xl">
             <p className="text-gray-300 text-base md:text-lg leading-relaxed">
               Trusted by defense organizations worldwide,{" "}
               <span className="text-[#ff7b00] font-semibold">VyomGarud</span>{" "}

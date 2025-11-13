@@ -182,21 +182,21 @@ const Hero = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="flex flex-wrap gap-3 mb-8"
           >
-            <div className="flex items-center gap-2 bg-gray-800/50 px-3 py-2 rounded-lg border border-gray-700 hover:border-[#ff7b00] hover:bg-gray-800/70 transition-all duration-300 transform hover:scale-110 cursor-pointer">
+            <div className="flex items-center gap-2 bg-gray-900/50 px-3 py-2 rounded-lg border-2 border-gray-800 hover:border-[#ff7b00] hover:bg-gray-900/70 transition-all duration-300 transform hover:scale-110">
               <Shield className="w-4 h-4 text-[#ff7b00]" />
-              <span className="text-gray-300 text-xs font-medium">
+              <span className="text-gray-300 text-xs font-medium tracking-wider">
                 Military-Grade
               </span>
             </div>
-            <div className="flex items-center gap-2 bg-gray-800/50 px-3 py-2 rounded-lg border border-gray-700 hover:border-[#ff7b00] hover:bg-gray-800/70 transition-all duration-300 transform hover:scale-110 cursor-pointer">
+            <div className="flex items-center gap-2 bg-gray-900/50 px-3 py-2 rounded-lg border-2 border-gray-800 hover:border-[#ff7b00] hover:bg-gray-900/70 transition-all duration-300 transform hover:scale-110">
               <Target className="w-4 h-4 text-[#ff7b00]" />
-              <span className="text-gray-300 text-xs font-medium">
+              <span className="text-gray-300 text-xs font-medium tracking-wider">
                 Precision Strike
               </span>
             </div>
-            <div className="flex items-center gap-2 bg-gray-800/50 px-3 py-2 rounded-lg border border-gray-700 hover:border-[#ff7b00] hover:bg-gray-800/70 transition-all duration-300 transform hover:scale-110 cursor-pointer">
+            <div className="flex items-center gap-2 bg-gray-900/50 px-3 py-2 rounded-lg border-2 border-gray-800 hover:border-[#ff7b00] hover:bg-gray-900/70 transition-all duration-300 transform hover:scale-110">
               <Cpu className="w-4 h-4 text-[#ff7b00]" />
-              <span className="text-gray-300 text-xs font-medium">
+              <span className="text-gray-300 text-xs font-medium tracking-wider">
                 AI-Powered
               </span>
             </div>
@@ -211,14 +211,14 @@ const Hero = () => {
           >
             <a
               href="#capabilities"
-              className="bg-orange-500 text-white px-6 py-3 rounded-4xl font-semibold hover:bg-white hover:text-black transition-all transform hover:scale-105 flex items-center justify-center gap-2 text-sm"
+              className="bg-orange-500 text-white px-6 py-3 rounded-4xl font-semibold hover:bg-white hover:text-black transition-all transform hover:scale-105 flex items-center justify-center gap-2 text-sm tracking-wide"
             >
               <Radar className="w-4 h-4" />
               Explore Capabilities
             </a>
             <a
               href="#contact"
-              className="border-2 border-gray-600 text-white px-6 py-3 rounded-4xl font-semibold hover:border-[#ff7b00] transition-all flex items-center justify-center gap-2 text-sm"
+              className="border-2 border-gray-600 text-white px-6 py-3 rounded-4xl font-semibold hover:border-[#ff7b00] transition-all flex items-center justify-center gap-2 text-sm tracking-wide"
             >
               <Shield className="w-4 h-4" />
               Get in Touch
